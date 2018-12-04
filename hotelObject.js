@@ -20,6 +20,8 @@ var hotel = {
         return this.roomNumbersAvailable.length + this.roomNumbersBooked.length;
     },
     
+    // roomNumbersAvailable: ["101", "102", "103", "104", "105", "106" ]
+    // roomNumbersBooked: [ ]
     bookRoom: function() {
         // only book a room if one or more is available
         

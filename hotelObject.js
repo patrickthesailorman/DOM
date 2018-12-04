@@ -26,10 +26,10 @@ var hotel = {
         if (this.numberOfRoomsAvailable() > 0 ) { 
             
             // var randomRoom = this.roomNumbersAvailable[Math.floor(Math.random()*this.roomNumbersAvailable.length)];
-            var randomRoom = document.getElementById("selectedRoom").value;
+            var selectedRoomDD = document.getElementById("selectedRoom").value;
             // alert("Room "+randomRoom+" has been booked.");
             
-            this.roomNumbersBooked = this.roomNumbersBooked.concat(this.roomNumbersAvailable.splice(this.roomNumbersAvailable.indexOf(randomRoom), 1));
+            this.roomNumbersBooked = this.roomNumbersBooked.concat(this.roomNumbersAvailable.splice(this.roomNumbersAvailable.indexOf(selectedRoomDD), 1));
             
         }
         

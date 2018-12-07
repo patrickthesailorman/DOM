@@ -46,7 +46,18 @@ var hotel = {
 
             document.getElementById("selectARoom").innerHTML = roomsListed;
 
-
+            // update the booked rooms dropdown list
+            
+            var roomsBooked = "<form> <select id='bookedRoom'>";
+            for (var i = 0; i < this.roomNumbersBooked.length; i++) {
+            
+                roomsBooked += "<option value=" +this.roomNumbersBooked[i] + ">" + this.roomNumbersBooked[i] + "</option>";
+            }
+            
+            roomsBooked += "</select>";
+            roomsBooked += "</form>";
+            
+            document.getElementById("roomsBooked").innerHTML = roomsBooked;
 
         }
 

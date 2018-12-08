@@ -38,7 +38,7 @@ var hotel = {
             var roomsListed = "<form> <select id='selectedRoom'>";
             for (var i = 0; i < this.roomNumbersAvailable.length; i++) {
 
-                roomsListed += "<option value=" + this.roomNumbersAvailable[i] + ">" + hotel.roomNumbersAvailable[i] + "</option>";
+                roomsListed += "<option value=" + this.roomNumbersAvailable[i] + ">" + this.roomNumbersAvailable[i] + "</option>";
             }
 
             roomsListed += "</select>";

@@ -32,3 +32,8 @@ var roomsListed = "<form> <select id='selectedRoom'>";
 
                 roomsListed += "<option value=" + hotel.roomNumbersAvailable[i] + ">" + hotel.roomNumbersAvailable[i] + "</option>";
             }
+            
+            roomsListed += "</select>";
+            roomsListed += "</form>";
+
+            document.getElementById("selectARoom").innerHTML = roomsListed;
